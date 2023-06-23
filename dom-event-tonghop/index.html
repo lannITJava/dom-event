@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListStudent</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Rikkei Academy</h1>
+    <div class="container">
+        <div class="divForm">
+            <h2>Thông tin học viên</h2>
+            <form action="#">
+                <label for="studentId">Mã sinh viên</label>
+                <input type="text" id="studentId" name="studentId" placeholder="vui lòng nhập mã sinh viên"><br>
+                <label for="studentName">Họ và tên</label>
+                <input type="text" name="studentName" id="studentName" placeholder="vui lòng nhập tên"><br>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="vui lòng nhập email"><br>
+                <label for="phone">Số điện thoại</label>
+                <input type="text" name="phone" id="phone" placeholder="vui lòng nhập số điện thoại"><br>
+                <label for="address">Quê Quán</label>
+                <input type="text" id="address" name="address" placeholder="vui lòng nhập địa chỉ quê quán"><br>
+                <label for="gender">Giới tính</label>
+                <input type="radio" id="male" value="Male" checked name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" value="Female" name="gender">
+                <label for="female">Female</label><br>
+                <input type="submit" value="Lưu lại" id="btnSave">
+            </form>
+        </div>
+        <div class="divTable">
+            <h2>Danh sách học viên</h2>
+            <label for="search">Tìm kiếm tên học viên :</label>
+            <input type="text" id="search" name="search">
+            <input type="submit" value="search"><br>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Mã sinh viên</th>
+                        <th>Họ và tên</th>
+                        <th>Email</th>
+                        <th>điện thoại</th>
+                        <th>Địa chỉ</th>
+                        <th>Gender</th>
+                        <th>Hành động</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="content">
+
+                   
+                </tbody>
+    
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
